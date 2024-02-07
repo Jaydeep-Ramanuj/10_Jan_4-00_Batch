@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div,
+      .child,
+      #child-id {
+        color: red;
+      } */
+      /* .child {
+        color: red;
+      }
+      #class-id {
+        color: red;
+      } */
+
+      /* .parent > .child {
+        color: maroon;
+      } */
+
+      /* .parent * {
+        color: chartreuse;
+      } */
+
+      .parent > .child .sub-child {
+        color: brown;
+      }
+
+      .parent > .child {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        child1
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+      <div class="child">
+        child2
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+      <div class="child">
+        child3
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+      <div class="child">
+        child4
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+        <div class="sub-child">sub-child4</div>
+        <div class="sub-child">sub-child5</div>
+      </div>
+      <i><div class="child">child in i</div></i>
+    </div>
+  </body>
+</html>
