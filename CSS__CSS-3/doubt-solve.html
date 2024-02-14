@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .gdad > .child {
+        color: red;
+      }
+
+      .aastha,
+      .bro {
+        color: black;
+      }
+
+      .aastha ~ .bro {
+        color: chocolate;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gdad">
+      <div class="child">
+        child1
+        <div class="aastha">aastha</div>
+        <div class="bro">bro1</div>
+        <div class="bro">bro2</div>
+      </div>
+      <div class="child">child2</div>
+    </div>
+  </body>
+</html>
