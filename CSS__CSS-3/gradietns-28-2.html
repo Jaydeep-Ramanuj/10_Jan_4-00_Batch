@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .box {
+        width: 500px;
+        height: 500px;
+        color: white;
+        background-image: url(https://images.pexels.com/photos/20141313/pexels-photo-20141313/free-photo-of-stirling-castle.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        border-radius: 12px;
+        font-size: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: relative;
+      } */
+
+      /* .overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background-image: linear-gradient(to top, black, transparent 70%);
+        z-index: 0;
+      }
+      .content {
+        z-index: 2;
+      } */
+
+      .box {
+        width: 500px;
+        height: 500px;
+        /* background-image: linear-gradient(135deg, grey, transparent 10%); */
+        background-image: conic-gradient(from 0.25turn at 20% 20%, blue, red);
+        /* background-image: radial-gradient(blue, red); */
+        transition: 1000ms;
+      }
+      /* .box:hover {
+        background-image: linear-gradient(135deg, grey, transparent 100%);
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box">
+      <div class="content">Something</div>
+      <div class="overlay"></div>
+    </div> -->
+
+    <div class="box"></div>
+  </body>
+</html>

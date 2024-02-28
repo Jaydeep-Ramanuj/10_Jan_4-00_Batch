@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        border: 1px solid;
+      }
+      .box {
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        border-radius: 12px;
+        margin: 50px;
+        /* transition: all 600ms; */
+        transition-property: transform;
+        transition-duration: 1600ms;
+        /* transition-delay: 500ms; */
+        /* transition-timing-function: ease; */
+        /* transition-timing-function: ease-in; */
+        /* transition-timing-function: ease-out; */
+        /* transition-timing-function: ease-in-out; */
+        /* transition-timing-function: ease-in-out; */
+        /* transition-timing-function: cubic-bezier(0.18, 2.04, 0, -1.16); */
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+        /* transition:  ; */
+
+        /* transition-property: height, width, background-color;
+        transition-duration: 2000ms, 4000ms, 2000ms;
+        transition-delay: 1000ms, 2000ms, 1300ms;
+        transition-timing-function: ease, ease-in, ease-out; */
+
+        transition: width 200ms 100ms, height 600ms 200ms,
+          background-color 1200ms 300ms;
+      }
+
+      .wrapper:hover .box {
+        width: 100px;
+        height: 200px;
+        background-color: violet;
+        /* transform: translateY(500px); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
