@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        width: 500px;
+        height: 500px;
+        background-color: rgba(153, 205, 50, 0.508);
+        margin: 50px auto;
+        position: relative;
+      }
+      .child img {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border-radius: 8px;
+        border: 1px solid;
+        object-fit: cover;
+      }
+      .child1 {
+        /* position: static; */
+        /* position: fixed; */
+        /* position: sticky; */
+        /* position: relative; */
+        position: absolute;
+        top: -50px;
+        /* left: 25px; */
+        right: -50px;
+        /* position: absolute; */
+        /* top: 100px; */
+        /* top: 10px;
+        left: 30px; */
+        /* top: 60px;
+        left: 100px; */
+
+        /* bottom: 300px; */
+      }
+      .spacer {
+        height: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child1 child">
+        <img
+          src="https://images.pexels.com/photos/18160718/pexels-photo-18160718/free-photo-of-iguana-salvadorena.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+      <div class="child2 child">
+        <img
+          src="https://images.pexels.com/photos/18118276/pexels-photo-18118276/free-photo-of-tropical-bird-on-a-branch.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+      <div class="child3 child">
+        <img
+          src="https://images.pexels.com/photos/14706932/pexels-photo-14706932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+      <div class="child4 child">
+        <img
+          src="https://images.pexels.com/photos/18129380/pexels-photo-18129380/free-photo-of-two-alpacas-standing-in-a-mountain-desert.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="spacer"></div>
+  </body>
+</html>
+
+<!-- positions -->
+
+<!-- static -->
+<!-- fixed -->
+<!-- sticky -->
+<!-- relative -->
+<!-- absolute -->

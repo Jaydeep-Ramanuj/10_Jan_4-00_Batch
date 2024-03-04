@@ -11,6 +11,7 @@
         justify-content: center;
         align-items: center;
       }
+
       .boxes {
         display: flex;
         gap: 20px;
@@ -32,8 +33,10 @@
         animation-fill-mode: forwards;
         animation-direction: alternate;
         animation-iteration-count: infinite;
+        background-color: lightgray;
+        animation-delay: var(--delay);
       }
-      .box:nth-child(1) {
+      /* .box:nth-child(1) {
         background-color: yellowgreen;
         animation-delay: 100ms;
       }
@@ -52,34 +55,35 @@
       .box:nth-child(5) {
         background-color: teal;
         animation-delay: 900ms;
-      }
+      } */
 
       @keyframes loader {
         0% {
-          transform: scale(1);
+          /* transform: scale(1); */
           /* opacity: 1; */
         }
         100% {
           transform: translateY(-50px) scale(0.2);
+          transform: scale(0.2);
           /* transform: ; */
           /* opacity: 0.2; */
         }
       }
 
-      @keyframes goRound {
+      /* @keyframes goRound {
         to {
           transform: rotate(360deg);
         }
-      }
+      } */
     </style>
   </head>
   <body>
     <div class="boxes">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+      <div class="box" style="--delay: 100ms"></div>
+      <div class="box" style="--delay: 300ms"></div>
+      <div class="box" style="--delay: 500ms"></div>
+      <div class="box" style="--delay: 700ms"></div>
+      <div class="box" style="--delay: 900ms"></div>
     </div>
   </body>
 </html>

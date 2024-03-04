@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #0f0f0f;
+      }
+      .wrapper {
+        border: 1px solid white;
+        position: relative;
+      }
+      .badge {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(246, 50, 50);
+        color: whitesmoke;
+        font-size: 1.8rem;
+        font-weight: 600;
+        position: absolute;
+        top: 65px;
+        left: 300px;
+        z-index: 5;
+      }
+      .dot {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: greenyellow;
+        position: absolute;
+        top: 60px;
+        left: 330px;
+        z-index: 7;
+      }
+      .fa-brands.fa-whatsapp {
+        font-size: 3rem;
+        color: #02c73d;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+      }
+      .spacer {
+        height: 1000px;
+      }
+      .fa-solid.fa-thumbs-up {
+        color: #222c51;
+        font-size: 3rem;
+        position: sticky;
+        top: 20px;
+        left: 600px;
+        /* bottom: 100px; */
+        /* right: 30px; */
+        /* left: 50px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="images/public-removebg-preview.png" alt="" />
+      <div class="dot"></div>
+      <div class="badge">5</div>
+      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-solid fa-thumbs-up"></i>
+    </div>
+    <div class="spacer"></div>
+  </body>
+</html>
