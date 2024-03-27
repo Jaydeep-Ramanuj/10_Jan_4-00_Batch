@@ -15,6 +15,11 @@
       // strict comparison operator
       console.log(10 === '10');
 
+      // Not comparison operator
+      console.log(!(10 != 12));
+      // Strict Not comparison operator
+      console.log(10 !== 12);
+
       //  ------------
 
       //   arithmetic operator
@@ -40,6 +45,117 @@
 
       //   Exponential (**)
       console.log(10 ** 3);
+
+      //  ------------
+
+      // comparison
+
+      // less than (<)
+      console.log(10 < 5);
+
+      // greater than (>)
+      console.log(10 > 5);
+
+      // less than equal to (<=)
+      console.log(10 <= 10);
+
+      // greater than equal to (<=)
+      console.log(10 >= 10);
+
+      //  ------------
+      // Logical operator
+
+      // 1 switch
+      // T/1/on | F/0/off
+
+      // 2 switch
+
+      // T | T
+      // T | F
+      // F | T
+      // F | F
+
+      // 3 switch
+
+      // T | T | T -> true, in AND gate
+      // T | T | F
+      // T | F | F
+      // F | F | F ->
+      // F | F | T
+      // F | T | T
+      // F | T | F
+      // T | F | T
+
+      // Primary gates
+
+      // AND (&&), gives true only if all conditions are true
+
+      // T | T | T -> true for AND gate
+      // T | T | F -> false for AND gate
+      // T | F | F -> false for AND gate
+      // F | F | F -> false for AND gate
+      // F | F | T -> false for AND gate
+      // F | T | T -> false for AND gate
+      // F | T | F -> false for AND gate
+      // T | F | T -> false for AND gate
+
+      a = 7;
+      console.log(a <= 10 && a < 8);
+
+      // OR (||), gives true if any of conditions are true
+
+      // T | T | T -> true for AND gate
+      // T | T | F -> true for AND gate
+      // T | F | F -> true for AND gate
+      // F | F | F -> false for AND gate
+      // F | F | T -> true for AND gate
+      // F | T | T -> true for AND gate
+      // F | T | F -> true for AND gate
+      // T | F | T -> true for AND gate
+
+      a = 8;
+      console.log(a >= 10 || a < 9);
+
+      // NOT (!), gives true if condition is false and gives false if condition is true
+
+      // T -> gives false in NOT gate
+      // F -> gives true in NOT gate
+
+      b = true;
+      console.log(!b);
+
+      // -----------
+      // Ternary
+
+      // syntax
+      // condition? code when true : code when false
+
+      // 10 < 2 ? console.log('yes') : console.log('No');
+
+      // if(condition){
+      // code
+      // }
+
+      // if (10 > 20) {
+      //   console.log('10 GT 20');
+      // } else {
+      //   console.log('10 LT 20');
+      // }
+
+      // 10 > 20 ? console.log('10 GT 20') : console.log('10 LT 20');
+
+      // short circuiting
+
+      // console.log(10 < 20 && 10 < 15);
+      // console.log(10 < 20 && 'Yes');
+
+      a = 11;
+
+      // a < 10 && console.log('a LT 10');
+      // a < 10 || console.log('a LT 10');
+
+      // console.log(true && false && 4);
+      // console.log(false || 5 || 4);
     </script>
   </body>
 </html>
