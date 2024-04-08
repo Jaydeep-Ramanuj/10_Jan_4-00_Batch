@@ -55,20 +55,26 @@
       // ---------
       //   join(). to join all items of array using specified delimiter, returns string
 
-      console.log(foodList.join(', '));
+      // console.log(foodList.join(', '));
 
       // ---------
       //   slice(). to join all items of array using specified delimiter, returns string
 
-      console.log(foodList);
+      // console.log(foodList);
       //   console.log(foodList.slice(0, 3));
       //   console.log(foodList.slice(2, 5));
       //   console.log(foodList.slice(5));
 
-      foodListLen = foodList.length;
-      indexOfThirdElementFromLast = foodListLen - 3;
-      console.log(foodList.slice(indexOfThirdElementFromLast - 5));
-      console.log(foodList.slice(foodListLen - 5, foodListLen - 2));
+      // foodListLen = foodList.length;
+      // indexOfThirdElementFromLast = foodListLen - 3;
+      // console.log(foodList.slice(indexOfThirdElementFromLast - 5));
+      // console.log(foodList.slice(foodListLen - 5, foodListLen - 2));
+
+      console.log(foodList);
+      // foodList.splice(3, 1, 'Idli', 'Menduvada');
+
+      foodList.splice(foodList.length - 1, 1, 'Samosa');
+      console.log(foodList);
     </script>
   </body>
 </html>

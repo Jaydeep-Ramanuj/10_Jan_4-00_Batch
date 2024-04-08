@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  object
+      obj1 = {
+        name: 'some',
+        age: 32,
+      };
+      //   Object is a collection of key-values pairs
+      //   object can have string, number, boolean, variable, array, object, functions,etc
+      let bio = 'Im me';
+      userDatabase = {
+        name: 'jay',
+        bio: bio,
+        followers: 361,
+        isPrivateAccount: true,
+        extra: obj1,
+        pet: ['simba', 'Kitty'],
+        bestFriend: { name: 'Vijay', age: 23 },
+        post: 62,
+        following: 32,
+        sharePost: sharePost,
+      };
+      function sharePost() {
+        console.log('This is sharePost()');
+      }
+      // access them using keys using .key-name
+      console.log(userDatabase.name);
+      console.log(userDatabase.sharePost);
+      console.log(userDatabase.bestFriend.name);
+      //   access them using keys but in ['key-name']
+      console.log(userDatabase['name']);
+      //   changing object values
+      userDatabase['name'] = 'sanjay';
+      console.log(userDatabase);
+
+      // destructuring of an object
+      let { post, following, sharePostFunc } = userDatabase;
+
+      //   let post = userDatabase.post;
+      //   let following = userDatabase.following;
+      //   let followers = userDatabase.followers;
+      console.log(post);
+
+      //   console.log(post);
+    </script>
+  </body>
+</html>
