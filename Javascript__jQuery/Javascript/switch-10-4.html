@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Date() function
+
+      //   let date = new Date().getDate();
+      //   console.log(date);
+      //   let month = new Date().getMonth();
+      //   console.log(month);
+      //   let year = new Date().getFullYear();
+      //   console.log(year);
+      //   let hour = new Date().getHours();
+      //   console.log(hour);
+      //   let minutes = new Date().getMinutes();
+      //   console.log(minutes);
+      //   let seconds = new Date().getSeconds();
+      //   console.log(seconds);
+
+      let day = new Date().getDay();
+      console.log(day);
+
+      day = 8;
+
+      //   Finding week day using if-else ladder
+
+      //   if (day == 0) {
+      //     console.log('Sunday');
+      //   } else if (day == 1) {
+      //     console.log('Monday');
+      //   } else if (day == 2) {
+      //     console.log('Tuesday');
+      //   } else if (day == 3) {
+      //     console.log('wednesday');
+      //   } else if (day == 4) {
+      //     console.log('Thursday');
+      //   } else if (day == 5) {
+      //     console.log('Friday');
+      //   } else if (day == 6) {
+      //     console.log('Saturday');
+      //   } else {
+      //     console.log('Oops Wrong input');
+      //   }
+
+      //   switch (key) {
+      //     case value1:
+      //       //code
+      //       break;
+      //     case value2:
+      //       //code
+      //       break;
+      //     case value3:
+      //       //code
+      //       break;
+      //   default:
+      //     // code
+      //   }
+
+      //   Finding week day using switch
+
+      switch (day) {
+        case 0:
+          // case 8:
+          console.log('Sunday');
+          break;
+        case 1:
+          console.log('Monday');
+          break;
+        case 2:
+          console.log('Tuesday');
+          break;
+        case 3:
+          console.log('Wednesday');
+          break;
+        case 4:
+          console.log('Thursday');
+          break;
+        case 5:
+          console.log('Friday');
+          break;
+        case 6:
+          console.log('Saturday');
+          break;
+        default:
+          console.log('Oops wrong input');
+      }
+    </script>
+  </body>
+</html>
