@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>History File</h1>
+    <a href="window-object-19-4.html">Go to Window file</a>
+    <button id="back">Go Back</button>
+    <script>
+      console.log(window);
+      console.log(window.history);
+
+      document.getElementById('back').addEventListener('click', () => {
+        window.history.back();
+      });
+
+      //   .onlick(() => {
+      //   });
+    </script>
+  </body>
+</html>
