@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="email" name="" id="email" placeholder="Enter your email" />
+      <button>Submit</button>
+    </form>
+
+    <script>
+      emailElement = document.getElementById('email');
+      document
+        .getElementsByTagName('button')[0]
+        .addEventListener('click', function (event) {
+          //   event.preventDefault();
+          emailValue = emailElement.value;
+          console.log(checkEmail(emailValue));
+        });
+
+      function checkEmail(emailValue) {
+        // isAtPresent(emailValue);
+        // isDotPresent(emailValue);
+        // console.log(!isAtAndDotTogether(emailValue));
+        // isCharactersBeforeAt(emailValue);
+        // isCharactersAfterDot(emailValue);
+
+        // console.log(
+        //   isAtPresent(emailValue) &&
+        //     isDotPresent(emailValue) &&
+        //     !isAtAndDotTogether(emailValue) &&
+        //     isCharactersBeforeAt(emailValue) &&
+        //     isCharactersAfterDot(emailValue)
+        // );
+
+        // console.log(emailValue.includes('@'));
+        // console.log(emailValue.includes('.'));
+        // console.log(!emailValue.includes('@.'));
+
+        if (
+          emailValue.includes('@') &&
+          emailValue.includes('.') &&
+          !emailValue.includes('@.') &&
+          isCharactersBeforeAt(emailValue) &&
+          isCharactersAfterDot(emailValue)
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      //   function isAtPresent() {
+      //     for (let i = 0; i < emailValue.length; i++) {
+      //       if (emailValue[i] == '@') {
+      //         return true;
+      //       }
+      //     }
+      //     return false;
+      //   }
+
+      //   function isDotPresent() {
+      //     for (let i = 0; i < emailValue.length; i++) {
+      //       if (emailValue[i] == '.') {
+      //         return true;
+      //       }
+      //     }
+      //     return false;
+      //   }
+      //   function isAtAndDotTogether() {
+      //     for (let i = 0; i < emailValue.length; i++) {
+      //       if (emailValue[i] + emailValue[i + 1] == '@.') {
+      //         return true;
+      //       }
+      //     }
+      //     return false;
+      //   }
+
+      function isCharactersBeforeAt(emailValue) {
+        let indexOfAt = emailValue.indexOf('@');
+
+        let charactersBeforeAt = emailValue.slice(0, indexOfAt);
+        if (charactersBeforeAt.length != 0) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      function isCharactersAfterDot(emailValue) {
+        let indexOfDot = emailValue.indexOf('.');
+
+        let charactersAfterDot = emailValue.slice(
+          indexOfDot + 1,
+          emailValue.length
+        );
+
+        if (charactersAfterDot.length != 0) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
