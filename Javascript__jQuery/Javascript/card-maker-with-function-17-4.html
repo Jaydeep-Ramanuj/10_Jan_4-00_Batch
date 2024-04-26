@@ -46,21 +46,53 @@
         document.body.append(newCardElement);
       }
 
-      cardMaker(
-        'Jay',
-        'Front End',
-        'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-      );
-      cardMaker(
-        'Ajay',
-        'Full Stack',
-        'https://images.pexels.com/photos/5323029/pexels-photo-5323029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-      );
-      cardMaker(
-        'Deep',
-        'MERN Stack',
-        'https://images.pexels.com/photos/3756038/pexels-photo-3756038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-      );
+      // cardMaker(
+      //   'Jay',
+      //   'Front End',
+      //   'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      // );
+      // cardMaker(
+      //   'Ajay',
+      //   'Full Stack',
+      //   'https://images.pexels.com/photos/5323029/pexels-photo-5323029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      // );
+      // cardMaker(
+      //   'Deep',
+      //   'MERN Stack',
+      //   'https://images.pexels.com/photos/3756038/pexels-photo-3756038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      // );
+
+      userData = [
+        {
+          name: 'Jay',
+          course: 'Front End',
+          url: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        },
+        {
+          name: 'Ajay',
+          course: 'Full Stack',
+          url: 'https://images.pexels.com/photos/5323029/pexels-photo-5323029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        },
+        {
+          name: 'Deep',
+          course: 'MERN Stack',
+          url: 'https://images.pexels.com/photos/3756038/pexels-photo-3756038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        },
+        {
+          name: 'Sanjay',
+          course: 'MEAN Stack',
+          url: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        },
+        {
+          name: 'Vijay',
+          course: 'Python Stack',
+          url: 'https://images.pexels.com/photos/3475637/pexels-photo-3475637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        },
+      ];
+
+      for (let i = 0; i < userData.length; i++) {
+        cardMaker(userData[i].name, userData[i].course, userData[i].url);
+      }
     </script>
   </body>
 </html>
