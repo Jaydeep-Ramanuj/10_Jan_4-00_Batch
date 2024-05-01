@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 50px;
+      }
+      .box {
+        margin-top: 20px;
+        height: 100px;
+        width: 100px;
+        border-radius: 5px;
+        background-color: yellowgreen;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="in">Fade In</button>
+    <button id="out">Fade Out</button>
+    <button id="to">Fade To</button>
+    <button id="toggle">Fade Toggle</button>
+    <div class="box"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $('#in').click(() => {
+        $('.box').fadeIn('600');
+      });
+      $('#out').click(() => {
+        $('.box').fadeOut('1500');
+      });
+      $('#to').click(() => {
+        $('.box').fadeTo('600', 0.5);
+      });
+      $('#toggle').click(() => {
+        $('.box').fadeToggle('600');
+      });
+    </script>
+  </body>
+</html>

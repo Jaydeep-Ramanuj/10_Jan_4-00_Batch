@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 50px;
+      }
+      .box {
+        margin-top: 20px;
+        height: 100px;
+        width: 100px;
+        border-radius: 5px;
+        background-color: yellowgreen;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="show">Show</button>
+    <button id="hide">Hide</button>
+    <button id="toggle">Toggle</button>
+    <div class="box"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $('#show').click(() => {
+        // console.log('Show button clicked');
+        $('.box').show('600');
+      });
+      $('#hide').click(() => {
+        // console.log('Hide button clicked');
+        $('.box').hide('600');
+      });
+      $('#toggle').click(() => {
+        // console.log('Toggle button clicked');
+        $('.box').toggle('600');
+      });
+    </script>
+  </body>
+</html>
