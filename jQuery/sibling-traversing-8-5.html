@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        child1
+        <div class="sub-child" id="some">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child" id="temp">sub-child3</div>
+        <div class="sub-child">sub-child4</div>
+        <div class="sub-child" id="else">sub-child5</div>
+      </div>
+      <div class="child">
+        child2
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+      <div class="child">
+        child3
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      console.log($('#temp').siblings());
+
+      //   console.log($('#some').next());
+      //   console.log($('#some').nextAll());
+      //   console.log($('#some').nextUntil('#else'));
+
+      //   console.log($('#else').prev());
+      //   console.log($('#else').prevAll());
+      //   console.log($('#else').prevUntil('#some'));
+    </script>
+  </body>
+</html>

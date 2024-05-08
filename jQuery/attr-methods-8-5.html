@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        color: white;
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" data-name="Jay">Box</div>
+
+    <input type="text" name="" id="" />
+
+    <button>Click here</button>
+    <img
+      src="https://images.pexels.com/photos/3829441/pexels-photo-3829441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt=""
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(() => {
+        console.log($('.box').attr('class'));
+        console.log($('.box').attr('data-name'));
+        console.log($('img').attr('src'));
+
+        //   $('img').removeAttr('src');
+        console.log($('img').prop('height'));
+        console.log($('.box').css('height', '200px'));
+        console.log(
+          $('.box').css({
+            'background-color': 'red',
+            color: 'black',
+            border: '5px solid white',
+          })
+        );
+      });
+
+      $('button').click(() => {
+        // console.log($('input').val());
+        console.log($('input').val('Jay'));
+      });
+    </script>
+  </body>
+</html>

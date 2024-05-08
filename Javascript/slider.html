@@ -39,6 +39,7 @@
       }
       .slider-item:nth-child(3) {
         background-color: tomato;
+        transform: scale(1.1);
       }
       .slider-item:nth-child(4) {
         background-color: teal;
@@ -120,14 +121,14 @@
           sliderItems[i].style.transform = `translateX(-${
             leftCounter * 100
           }px)`;
-          if (i == sliderIndex) {
-            sliderItems[i].style.transform = `translateX(-${
-              leftCounter * 100
-            }px) scale(1.1)`;
-          }
         }
-        leftCounter++;
+
+        sliderItems[sliderIndex].style.transform = `translateX(-${
+          leftCounter * 100
+        }px) scale(1.1)`;
         sliderIndex++;
+        leftCounter++;
+        console.log(sliderIndex);
       }
       function slideRight() {
         for (let i = 0; i < sliderItems.length; i++) {
