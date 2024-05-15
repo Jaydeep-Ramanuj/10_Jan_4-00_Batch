@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #24252e;
+      }
+
+      .container {
+        height: 500px;
+        width: 700px;
+        border-radius: 12px;
+        margin: 50px auto;
+        position: relative;
+      }
+      .slider {
+        height: inherit;
+        width: inherit;
+        border-radius: 12px;
+        border: 1px solid black;
+        display: flex;
+        transition: all 300ms;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .slider-item {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+      }
+
+      .left-btn,
+      .right-btn {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: rgba(211, 211, 211, 0.407);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+      }
+
+      .slider-item:nth-child(1) {
+        left: 0%;
+      }
+      .slider-item:nth-child(2) {
+        left: 100%;
+      }
+      .slider-item:nth-child(3) {
+        left: 200%;
+      }
+      .slider-item:nth-child(4) {
+        left: 300%;
+      }
+      .slider-item:nth-child(5) {
+        left: 500%;
+      }
+
+      .left-btn {
+        left: -50px;
+      }
+
+      .right-btn {
+        right: -50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slider">
+        <img
+          src="https://images.pexels.com/photos/2138922/pexels-photo-2138922.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt=""
+          class="slider-item"
+        />
+        <img
+          src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt=""
+          class="slider-item"
+        />
+        <img
+          src="https://images.pexels.com/photos/619950/pexels-photo-619950.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt=""
+          class="slider-item"
+        />
+        <img
+          src="https://images.pexels.com/photos/2132008/pexels-photo-2132008.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt=""
+          class="slider-item"
+        />
+        <img
+          src="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt=""
+          class="slider-item"
+        />
+      </div>
+      <div class="left-btn"><</div>
+      <div class="right-btn">></div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const leftBtn = $('.left-btn');
+      const rightBtn = $('.right-btn');
+      let leftCounter = 1;
+      let rightCounter = 1;
+
+      console.log($('.slider-item').eq(1));
+
+      leftBtn.click(() => {
+        for (let i = 1; i <= 5; i++) {
+          $('.slider-item')
+            .eq(i)
+            .css('left', `-${leftCounter * 100}%`);
+        }
+        leftCounter++;
+      });
+      rightBtn.click(() => {
+        for (let i = 1; i <= 5; i++) {
+          $('.slider-item')
+            .eq(i)
+            .css('left', `-${leftCounter - 1 * 100}%`);
+        }
+        rightCounter++;
+      });
+    </script>
+  </body>
+</html>
