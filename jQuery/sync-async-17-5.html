@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // sync (blocking), means javascript executes line by line, if there is code which takes long time then all next code will wait until we complete with task
+
+      //   console.log('This will run first');
+      //   for (let i = 0; i < 1000; i++) {
+      //     console.log('hey');
+      //   }
+      //   console.log('This will run second');
+      //   console.log('This will run third');
+
+      //   -----------------
+      // async, it doesn't block next code
+
+      console.log('This will run first');
+
+      setTimeout(() => {
+        for (let i = 0; i < 1000; i++) {
+          console.log('hey');
+        }
+      }, 2000);
+      console.log('This will run second');
+      console.log('This will run third');
+    </script>
+  </body>
+</html>
