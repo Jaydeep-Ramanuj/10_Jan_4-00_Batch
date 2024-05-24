@@ -5,8 +5,22 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .btn {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      .btn:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      }
+    </style>
   </head>
   <body>
-    Jay
+    <div
+      class="btn py-2 px-4 bg-neutral-800 w-24 my-12 mx-auto text-zinc-300 text-2xl font-semibold rounded-xl flex justify-center align-center hover:bg-gray-400 hover:-translate-y-3 transition duration-300"
+    >
+      Jay
+    </div>
   </body>
 </html>
