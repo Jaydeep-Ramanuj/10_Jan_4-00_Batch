@@ -566,72 +566,20 @@ video {
   position: relative;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.top-3 {
-  top: 0.75rem;
-}
-
-.right-5 {
-  right: 1.25rem;
-}
-
-.right-3 {
-  right: 0.75rem;
-}
-
-.-left-11 {
-  left: -2.75rem;
-}
-
-.-left-52 {
-  left: -13rem;
-}
-
-.-left-16 {
-  left: -4rem;
-}
-
-.-left-24 {
-  left: -6rem;
-}
-
-.-left-full {
-  left: -100%;
-}
-
-.-left-40 {
-  left: -10rem;
-}
-
-.-left-32 {
-  left: -8rem;
+.-bottom-20 {
+  bottom: -5rem;
 }
 
 .-left-28 {
   left: -7rem;
 }
 
-.-bottom-2 {
-  bottom: -0.5rem;
+.right-3 {
+  right: 0.75rem;
 }
 
-.-bottom-28 {
-  bottom: -7rem;
-}
-
-.-bottom-24 {
-  bottom: -6rem;
-}
-
-.-bottom-20 {
-  bottom: -5rem;
-}
-
-.z-0 {
-  z-index: 0;
+.top-3 {
+  top: 0.75rem;
 }
 
 .-z-10 {
@@ -663,25 +611,21 @@ video {
   height: 100%;
 }
 
-.h-8 {
-  height: 2rem;
+.h-24 {
+  height: 6rem;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-full {
   width: 100%;
 }
 
-.w-5\/6 {
-  width: 83.333333%;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
+.w-100 {
+  width: 100px;
 }
 
 .cursor-pointer {
@@ -698,10 +642,6 @@ video {
 
 .justify-end {
   justify-content: flex-end;
-}
-
-.justify-between {
-  justify-content: space-between;
 }
 
 .justify-around {
@@ -726,21 +666,17 @@ video {
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
 .p-1 {
   padding: 0.25rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .p-5 {
   padding: 1.25rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .pe-5 {
@@ -759,6 +695,16 @@ video {
 .text-slate-900 {
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-789 {
+  transition-duration: 789ms;
 }
 
 .hover\:bg-slate-400:hover {
@@ -784,16 +730,8 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:visible {
-    visibility: visible;
-  }
-
   .md\:static {
     position: static;
-  }
-
-  .md\:block {
-    display: block;
   }
 
   .md\:flex {
