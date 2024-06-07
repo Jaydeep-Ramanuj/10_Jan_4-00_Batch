@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  width: 300px;
+  height: 450px;
+  border-radius: 24px;
+  margin: 50px auto;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 300ms;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.card .img-div {
+  height: 30%;
+  width: 100%;
+  background-color: #653bf7;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.card .img-div img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  outline: 5px solid #653bf7;
+  margin-top: 50px;
+  /* box-shadow: 0 0 5px 5px whitesmoke; */
+}
+.card .card-content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+.card .card-content .socials,
+.card .card-content .stats {
+  display: flex;
+  gap: 10px;
+}
+.card .card-content .socials {
+  gap: 15px;
+}
+.card .card-content .socials .icon {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: #653bf7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 300ms;
+}
+.card .card-content .socials .icon .fa-brands {
+  font-size: 1.8rem;
+  color: rgb(194, 193, 193);
+}
+.card .card-content .socials .icon:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.card .card-content .socials .icon:nth-child(1) {
+  background-color: #5956b7;
+}
+.card .card-content .socials .icon:nth-child(2) {
+  background-color: #5182f2;
+}
+.card .card-content .socials .icon:nth-child(3) {
+  background-color: #d02468;
+}
+.card .card-content .socials .icon:nth-child(4) {
+  background-color: #e72100;
+}
+.card .card-content .btns {
+  display: flex;
+  gap: 20px;
+}
+.card .card-content .btns .msg-btn,
+.card .card-content .btns .sub-btn {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #653bf7;
+  color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 300ms;
+}
+.card .card-content .btns .msg-btn:hover,
+.card .card-content .btns .sub-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}/*# sourceMappingURL=card.css.map */
