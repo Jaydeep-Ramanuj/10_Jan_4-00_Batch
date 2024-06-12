@@ -1,0 +1,45 @@
+.box {
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
+  margin: 50px auto;
+  background-color: #4da719;
+}
+.box:hover {
+  animation-name: rainbow;
+  animation-duration: 5000ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 300ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: #4da719;
+  }
+  13% {
+    background-color: #19a750;
+  }
+  25% {
+    background-color: #1994a7;
+  }
+  38% {
+    background-color: #192aa7;
+  }
+  50% {
+    background-color: #7319a7;
+  }
+  63% {
+    background-color: #a71971;
+  }
+  76% {
+    background-color: #a72c19;
+  }
+  88% {
+    background-color: #a79719;
+  }
+  100% {
+    background-color: #4da719;
+  }
+}/*# sourceMappingURL=colors.css.map */

@@ -1,0 +1,57 @@
+@use 'sass:color';
+$primary-color: yellowgreen;
+$newColor: mix($primary-color, green);
+
+.box {
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
+  margin: 50px auto;
+  background-color: $newColor;
+  //   &:hover {
+  //     background-color: scale-color($newColor, $lightness: +20%, $red: -100);
+  //   }
+  //   &:hover {
+  //     background-color: adjust-color($primary-color, $red: 50, $alpha: -0.7);
+  //   }
+  &:hover {
+    // background-color: adjust-hue($newColor, $degrees: 90deg);
+
+    animation-name: rainbow;
+    animation-duration: 5000ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 300ms;
+    animation-iteration-count: 1;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: adjust-hue($newColor, $degrees: 0deg);
+  }
+  13% {
+    background-color: adjust-hue($newColor, $degrees: 45deg);
+  }
+  25% {
+    background-color: adjust-hue($newColor, $degrees: 90deg);
+  }
+  38% {
+    background-color: adjust-hue($newColor, $degrees: 135deg);
+  }
+  50% {
+    background-color: adjust-hue($newColor, $degrees: 180deg);
+  }
+  63% {
+    background-color: adjust-hue($newColor, $degrees: 225deg);
+  }
+  76% {
+    background-color: adjust-hue($newColor, $degrees: 270deg);
+  }
+  88% {
+    background-color: adjust-hue($newColor, $degrees: 315deg);
+  }
+  100% {
+    background-color: adjust-hue($newColor, $degrees: 360deg);
+  }
+}

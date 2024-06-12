@@ -1,0 +1,40 @@
+ul li {
+  margin-left: 100px;
+  list-style-type: none;
+  position: relative;
+}
+ul li:before {
+  position: absolute;
+  top: 0;
+  left: -100px;
+}
+ul li:nth-child(1)::before {
+  content: "jay";
+}
+ul li:nth-child(2)::before {
+  content: "smart jay";
+}
+ul li:nth-child(3)::before {
+  content: "first jay";
+}
+ul li:nth-child(4)::before {
+  content: "first jay";
+}
+ul li:nth-child(5)::before {
+  content: Something;
+}
+ul li:nth-child(6)::before {
+  content: "something";
+}
+ul li:nth-child(7)::before {
+  content: "9 ";
+}
+ul li:nth-child(8)::before {
+  content: "38 ";
+}
+ul li:nth-child(9)::before {
+  content: "JAY";
+}
+ul li:nth-child(10)::before {
+  content: "u18sv0r";
+}/*# sourceMappingURL=string.css.map */

@@ -1,0 +1,16 @@
+$height: 500px !default;
+$width: 300px;
+$bg-color: red;
+.box {
+  $decrease: 100px;
+  $newHeight: $height - $decrease;
+  $newWidth: $width + 50px;
+  $newColor: mix($bg-color, blue);
+  height: $newHeight;
+  width: $newWidth;
+  background-color: $newColor;
+}
+
+// .box2 {
+//   width: $decrease; //Error
+// }
