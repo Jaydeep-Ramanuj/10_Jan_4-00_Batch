@@ -1,0 +1,55 @@
+.outer-box {
+  height: 300px;
+  width: 500px;
+  border-radius: 8px;
+  background-color: #24252e;
+  margin: 100px auto;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: normal;
+  padding: 10px;
+  position: relative;
+  left: initial;
+  top: initial;
+  right: initial;
+  bottom: initial;
+  z-index: 0;
+  padding-top: 100px;
+  transition: all 300ms;
+}
+.outer-box:hover {
+  transform: scale(1.2);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.outer-box .box {
+  height: 80px;
+  width: 80px;
+  border-radius: 8px;
+  background-color: tomato;
+  transition: all 300ms;
+}
+.outer-box .box:hover {
+  transform: scale(0.8);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.outer-box .floating-box {
+  width: 80%;
+  height: 100px;
+  background-color: yellowgreen;
+  border-radius: 8px;
+  position: absolute;
+  left: 50px;
+  top: -50px;
+  right: initial;
+  bottom: initial;
+  z-index: 0;
+  transition: all 300ms;
+}
+.outer-box .floating-box:hover {
+  transform: scale(-5gap);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}/*# sourceMappingURL=mixin.css.map */

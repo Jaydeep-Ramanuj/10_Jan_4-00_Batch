@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 20px;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: yellowgreen;
+        border-radius: 8px;
+        font-size: 32px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <input
+      type="number"
+      name=""
+      id="num"
+      placeholder="Enter number box you want"
+    />
+    <button>Generate</button>
+    <div class="boxes"></div>
+
+    <script>
+      let boxes = document.getElementsByClassName('boxes')[0];
+      document
+        .getElementsByTagName('button')[0]
+        .addEventListener('click', () => {
+          let boxCount = document.getElementById('num').value;
+
+          boxes.replaceChildren();
+          for (let i = 0; i < boxCount; i++) {
+            createBoxes(i + 1);
+          }
+        });
+
+      function createBoxes(number) {
+        // let newBox = document.createElement('div');
+        let newBox = document.createElement(div);
+        newBox.classList.add('box');
+        newBox.textContent = number;
+        boxes.append(newBox);
+      }
+    </script>
+  </body>
+</html>

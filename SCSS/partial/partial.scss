@@ -1,0 +1,11 @@
+@use 'variable';
+@use 'effect';
+
+.box {
+  height: 300px;
+  width: 300px;
+  margin: 50px auto;
+  background-color: variable.$bg-color;
+  border-radius: variable.$border-radius;
+  @include effect.hover-effect();
+}

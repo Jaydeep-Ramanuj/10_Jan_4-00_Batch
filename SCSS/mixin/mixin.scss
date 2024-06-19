@@ -1,0 +1,80 @@
+@mixin customFlex(
+  $direction: row,
+  $justify: start,
+  $align: start,
+  $wrap: nowrap,
+  $content: normal,
+  $gap: 0px
+) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  align-content: $content;
+}
+
+@mixin customPosition(
+  $position: static,
+  $left: initial,
+  $top: initial,
+  $right: initial,
+  $bottom: initial,
+  $z: 0
+) {
+  position: $position;
+  left: $left;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  z-index: $z;
+}
+
+@mixin hover-effect($scale) {
+  transition: all 300ms;
+  &:hover {
+    transform: scale($scale);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+}
+
+.outer-box {
+  height: 300px;
+  width: 500px;
+  border-radius: 8px;
+  background-color: #24252e;
+  margin: 100px auto;
+  //   display: flex;
+  //   justify-content: space-around;
+  // @include customFlex()
+  //   @include customFlex(row, center, center, nowrap, normal, 10px);
+  @include customFlex($gap: 20px);
+  padding: 10px;
+  //   position: relative;
+  @include customPosition($position: relative);
+  padding-top: 100px;
+  @include hover-effect(1.2);
+
+  .box {
+    height: 80px;
+    width: 80px;
+    border-radius: 8px;
+    background-color: tomato;
+    @include hover-effect(0.8);
+  }
+
+  .floating-box {
+    width: 80%;
+    height: 100px;
+    background-color: yellowgreen;
+    border-radius: 8px;
+    // position: absolute;
+    // top: -50px;
+
+    @include customPosition($position: absolute, $top: -50px, $left: 50px);
+    @include hover-effect(0gap-5);
+  }
+}

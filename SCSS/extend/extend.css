@@ -1,0 +1,53 @@
+.box1, .box10, .box9, .box8, .box7, .box6, .box5, .box4, .box3, .box2 {
+  height: 300px;
+  width: 300px;
+  border-radius: 8px;
+  margin: 50px auto;
+  font-size: 32px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms;
+  background-color: yellowgreen;
+}
+.box1:hover, .box10:hover, .box9:hover, .box8:hover, .box7:hover, .box6:hover, .box5:hover, .box4:hover, .box3:hover, .box2:hover {
+  transform: scale(0.5);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.box2 {
+  background-color: tomato;
+}
+
+.box3 {
+  background-color: teal;
+}
+
+.box4 {
+  background-color: yellow;
+}
+
+.box5 {
+  background-color: aqua;
+}
+
+.box6 {
+  background-color: magenta;
+}
+
+.box7 {
+  background-color: brown;
+}
+
+.box8 {
+  background-color: steelblue;
+}
+
+.box9 {
+  background-color: chartreuse;
+}
+
+.box10 {
+  background-color: coral;
+}/*# sourceMappingURL=extend.css.map */
