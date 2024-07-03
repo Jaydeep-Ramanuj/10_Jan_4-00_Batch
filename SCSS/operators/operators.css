@@ -1,0 +1,15 @@
+.box {
+  height: 100px;
+  width: 600px;
+  background-color: yellowgreen;
+  border-radius: 12px;
+  font-size: 64px;
+}
+.box .inner-box {
+  height: 100px;
+  height: 150px;
+  width: 636.6666666667px;
+  background-color: tomato;
+  border-radius: 10px;
+  font-size: 32px;
+}/*# sourceMappingURL=operators.css.map */
