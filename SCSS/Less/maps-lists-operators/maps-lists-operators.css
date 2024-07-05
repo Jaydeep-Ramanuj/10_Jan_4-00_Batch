@@ -1,0 +1,10 @@
+.box {
+  width: 700px;
+  height: 350px;
+  border-radius: 12px;
+  margin: 100px auto;
+  background-color: tomato;
+  border: 3px solid black;
+  display: block;
+  color: blue;
+}
