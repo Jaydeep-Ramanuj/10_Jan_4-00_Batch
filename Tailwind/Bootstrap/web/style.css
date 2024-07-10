@@ -33,3 +33,11 @@ main {
   width: 60%;
   font-size: 18px;
 } */
+
+.contact-form {
+  background-color: lightgrey;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  max-width: 50px !important;
+}
