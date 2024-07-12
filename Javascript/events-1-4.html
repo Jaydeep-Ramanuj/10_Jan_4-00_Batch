@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">No data</div>
+    <button>Click here</button>
+    <script>
+      btn = document.getElementsByTagName('button')[0];
+      box = document.getElementsByClassName('box')[0];
+
+      //   btn.addEventListener('click', function () {
+      //     console.log('Btn clicked');
+      //     box.innerText = 'Btn clicked';
+      //   });
+      //   btn.addEventListener('dblclick', function () {
+      //     console.log('Btn double clicked');
+      //     box.innerText = 'Btn double clicked';
+      //   });
+      //   btn.addEventListener('focus', function () {
+      //     console.log('Btn focused');
+      //     box.innerText = 'Btn focused';
+      //   });
+      //   btn.addEventListener('mouseover', function () {
+      //     console.log('Btn hovered');
+      //     box.innerText = 'Btn hovered';
+      //   });
+      //   btn.addEventListener('mouseenter', function () {
+      //     console.log('Btn mouse enter');
+      //     box.innerText = 'Btn mouse enter';
+      //   });
+      //   btn.addEventListener('mouseleave', function () {
+      //     console.log('Btn mouse leave');
+      //     box.innerText = 'Btn mouse leave';
+      //   });
+
+      //   document.addEventListener('keydown', function (event) {
+      //     // console.log('Key pressed in document');
+      //     // box.innerText = 'Btn mouse leave';
+
+      //     // console.log(event.key);
+      //     // console.log(event.ctrlKey);
+      //     console.log(event.altKey);
+      //   });
+
+      btn.onclick = function () {
+        console.log('btn clicked');
+      };
+    </script>
+  </body>
+</html>

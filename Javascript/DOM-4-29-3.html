@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      src="https://images.pexels.com/photos/2372944/pexels-photo-2372944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="not loading"
+    />
+
+    <script>
+      let img = document.getElementsByTagName('img')[0];
+
+      //   ----------
+      // setAttribute
+      img.setAttribute(
+        'src',
+        'https://images.pexels.com/photos/2449605/pexels-photo-2449605.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      );
+
+      // img.setAttribute('alt', 'Image not loading');
+
+      //   ----------
+      // removeAttribute
+
+      img.removeAttribute('alt');
+
+      //   ----------
+      // getAttribute
+
+      console.log(img.getAttribute('src'));
+    </script>
+  </body>
+</html>

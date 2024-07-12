@@ -1,0 +1,47 @@
+.credit-card-form {
+  padding: 20px;
+  background-color: #ffffff;
+}
+.credit-card-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+.credit-card-form form input {
+  outline: none;
+  padding: 8px;
+  border: 2px solid rgba(128, 128, 128, 0.647);
+  border-radius: 8px;
+}
+.credit-card-form form .card-number,
+.credit-card-form form .card-holder,
+.credit-card-form form .date-cvv .expiry-date,
+.credit-card-form form .date-cvv .cvv {
+  margin: 10px 0;
+  position: relative;
+}
+.credit-card-form form .card-number label,
+.credit-card-form form .card-holder label,
+.credit-card-form form .date-cvv .expiry-date label,
+.credit-card-form form .date-cvv .cvv label {
+  position: absolute;
+  font-size: 14px;
+  text-transform: uppercase;
+  top: -20px;
+  left: 5px;
+  color: grey;
+}
+.credit-card-form form .date-cvv .expiry-date input {
+  min-width: 150px;
+}
+.credit-card-form form .date-cvv {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 0px;
+  flex-wrap: nowrap;
+}/*# sourceMappingURL=credit-card-form-10-6.css.map */

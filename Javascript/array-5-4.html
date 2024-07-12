@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      names = ['jay', 'ajay', 'sanajay', 'vijay'];
+      a = '10';
+      function foo() {
+        console.log('foo() executed');
+      }
+      obj = {
+        name: 'jay',
+        course: 'wd',
+      };
+      arr = ['jay', 10, true, a, names, foo, [10, 20, [30, 40]], obj];
+      console.log(arr);
+      console.log(arr[0]);
+      console.log(arr[2]);
+      console.log(arr[3]);
+      console.log(arr[4]);
+      console.log(arr[4][1]);
+      console.log(arr[6][2]);
+      console.log(arr[6][2][0]);
+      console.log(arr[5]());
+
+      arrayOfArray = [
+        [10, 20],
+        [30, 40],
+      ];
+
+      console.log(arrayOfArray[1][1]);
+
+      arrayOfArray[1][1] = 50;
+      console.log(arrayOfArray);
+    </script>
+  </body>
+</html>

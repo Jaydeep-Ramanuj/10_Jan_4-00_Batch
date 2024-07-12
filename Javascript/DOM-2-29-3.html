@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">
+      This is some box
+      <div class="child">Im child</div>
+    </div>
+
+    <script>
+      let box = document.getElementsByClassName('box')[0];
+
+      //   console.log(box);
+
+      //   ----------
+      // InnerText
+
+      //   console.log(box.innerText);
+      //   box.innerText = 'Hey this is new text';
+
+      //   ----------
+      // InnerHTML
+
+      //   console.log(box.innerHTML);
+      box.innerHTML = '<b>This will be bold</b>';
+
+      //   ----------
+      // css
+
+      //   box.style.color = 'red';
+      //   box.style.backgroundColor = 'grey';
+
+      box.style.cssText =
+        'color:red; background-color:grey;border:1px solid aqua';
+
+      // conventions
+
+      // camelCase => thisIsExampleOfCamelCase
+      // PascalCase => ThisIsExampleOfPascalCase
+      // snake_Case => this_is_example_of_snake_case
+      // kabab-Case => this-is-example-of-kabab-case
+    </script>
+  </body>
+</html>

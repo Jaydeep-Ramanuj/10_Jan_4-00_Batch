@@ -1,0 +1,57 @@
+//  Variables
+
+@width: 500px;
+@height:@width - 100px;
+@box-border:1px solid red;
+
+@box-color: tomato;
+
+//  Function
+@box-hover-color: saturate(tomato, -30%);
+// Mixins
+.flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Namespace
+.effect {
+  .box-hover-effect() {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 300ms;
+    &:hover {
+      background-color: @box-hover-color;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+  }
+  .focus-effect {
+    &:focus {
+      outline-color: blue;
+    }
+  }
+}
+
+// Outside namespace
+.box-hover-effect {
+  &:hover {
+    background-color: yellow;
+  }
+}
+
+.box {
+  width: @width;
+  height: @height;
+  background-color: @box-color;
+  border: @box-border;
+  .flexCenter();
+
+  //   .effect.box-hover-effect();
+  .effect.box-hover-effect();
+}
+
+input {
+  .effect.focus-effect();
+}

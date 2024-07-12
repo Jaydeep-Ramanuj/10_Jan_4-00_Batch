@@ -1,0 +1,31 @@
+$box-width: 600px;
+$box-height: 100px;
+$inner-box-width: $box-width - 100px;
+$box-br: 12px;
+$inner-box-fz: 32px;
+
+$some: 1000px;
+
+.box {
+  height: $box-height;
+  width: $box-width;
+  background-color: yellowgreen;
+  border-radius: $box-br;
+  font-size: $inner-box-fz * 2;
+
+  .inner-box {
+    height: 100px;
+    height: $box-height + 50px;
+    // width: $inner-box-width;
+    // @debug ($some * 2) / 3 - 30px;
+    width: ($some * 2) / 3 - 30px;
+
+    @if ($box-width > 500px) {
+      background-color: tomato;
+    } @else {
+      background-color: teal;
+    }
+    border-radius: $box-br - 2px;
+    font-size: $inner-box-fz;
+  }
+}

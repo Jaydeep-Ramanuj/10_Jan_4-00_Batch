@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      foodList = [
+        'Pizza',
+        'Burger',
+        'Sandwich',
+        'Dhosha',
+        'Angur rabdi',
+        'Srikhand',
+        'Pavbhaji',
+        'Aloo Partha',
+        'momos',
+      ];
+
+      // ---------
+      //   .length, to get length of an array
+
+      //   console.log(foodList.length);
+
+      // ---------
+      //   push(). to add an item at the end of an array
+
+      //   console.log(foodList);
+      //   foodList.push('Ras Madhuri');
+      //   console.log(foodList);
+
+      // ---------
+      //   pop(). to remove an item from the end of an array
+
+      //   console.log(foodList);
+      //   foodList.pop();
+      //   console.log(foodList);
+
+      // ---------
+      //   shift(). to remove an item from the start of an array
+
+      //   console.log(foodList);
+      //   foodList.shift();
+      //   console.log(foodList);
+
+      // ---------
+      //   unshift(). to add an item from the start of an array
+
+      //   console.log(foodList);
+      //   foodList.unshift('Ras Madhuri');
+      //   console.log(foodList);
+
+      // ---------
+      //   join(). to join all items of array using specified delimiter, returns string
+
+      // console.log(foodList.join(', '));
+
+      // ---------
+      //   slice(). to join all items of array using specified delimiter, returns string
+
+      // console.log(foodList);
+      //   console.log(foodList.slice(0, 3));
+      //   console.log(foodList.slice(2, 5));
+      //   console.log(foodList.slice(5));
+
+      // foodListLen = foodList.length;
+      // indexOfThirdElementFromLast = foodListLen - 3;
+      // console.log(foodList.slice(indexOfThirdElementFromLast - 5));
+      // console.log(foodList.slice(foodListLen - 5, foodListLen - 2));
+
+      console.log(foodList);
+      // foodList.splice(3, 1, 'Idli', 'Menduvada');
+
+      foodList.splice(foodList.length - 1, 1, 'Samosa');
+      console.log(foodList);
+    </script>
+  </body>
+</html>

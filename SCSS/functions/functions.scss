@@ -1,0 +1,17 @@
+@function calculateWidth($width) {
+  $newWidth: $width - 100px;
+  @return $newWidth;
+}
+
+.box {
+  width: 500px;
+  height: 300px;
+  background-color: yellowgreen;
+  border-radius: 12px;
+
+  .inner-box {
+    height: 100px;
+    width: calculateWidth(500px);
+    background-color: tomato;
+  }
+}

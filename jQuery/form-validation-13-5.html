@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .input-div {
+        position: relative;
+      }
+      .feedback {
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        display: none;
+      }
+
+      form {
+        width: 500px;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form novalidate>
+      <div class="input-div">
+        <input
+          type="text"
+          name=""
+          id="username"
+          placeholder="Enter your username"
+          required
+        />
+        <span class="feedback">fsfsf</span>
+      </div>
+      <div class="input-div">
+        <input
+          type="email"
+          name=""
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <span class="feedback"></span>
+      </div>
+      <div class="input-div">
+        <input
+          type="password"
+          name=""
+          id="password"
+          placeholder="Enter your password"
+          required
+        />
+        <span class="feedback"></span>
+      </div>
+
+      <button id="btn">Submit</button>
+    </form>
+
+    <script>
+      btn.addEventListener('click', (e) => {
+        let username = document.getElementById('username');
+        let email = document.getElementById('email');
+        let password = document.getElementById('password');
+        let btn = document.getElementById('btn');
+
+        e.preventDefault();
+        if (username.checkValidity()) {
+          let feedbackEle = username.nextElementSibling;
+          feedbackEle.style.display = 'inline';
+          feedbackEle.innerText = 'Valid input';
+          feedbackEle.style.color = 'green';
+        } else {
+          let feedbackEle = username.nextElementSibling;
+          feedbackEle.style.display = 'inline';
+          feedbackEle.innerText = 'Invalid input';
+          feedbackEle.style.color = 'red';
+        }
+        if (email.checkValidity()) {
+          let feedbackEle = email.nextElementSibling;
+          feedbackEle.style.display = 'inline';
+          feedbackEle.innerText = 'Valid input';
+          feedbackEle.style.color = 'green';
+        } else {
+          let feedbackEle = email.nextElementSibling;
+          feedbackEle.style.display = 'inline';
+          feedbackEle.innerText = 'Invalid input';
+          feedbackEle.style.color = 'red';
+        }
+        if (password.checkValidity()) {
+          let feedbackEle = password.nextElementSibling;
+          feedbackEle.style.display = 'inline';
+          feedbackEle.innerText = 'Valid input';
+          feedbackEle.style.color = 'green';
+        } else {
+          let feedbackEle = password.nextElementSibling;
+          feedbackEle.style.display = 'inline';
+          feedbackEle.innerText = 'Invalid input';
+          feedbackEle.style.color = 'red';
+        }
+      });
+    </script>
+  </body>
+</html>

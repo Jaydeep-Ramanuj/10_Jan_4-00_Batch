@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-size: 1.2rem;
+      }
+      /* .parent > .child > p > i > b {
+        color: red;
+      } */
+      .child {
+        border: 1px solid red;
+      }
+
+      /* .parent > .child > i > p {
+        color: red;
+      } */
+
+      .parent > .another-child > .child > .sub-child > .child > b > p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        <p>
+          p in first child
+          <i
+            >This p is inside p tag
+            <b>This b is inside p</b>
+          </i>
+        </p>
+        <b
+          >b in first child
+          <p>This p is inside b of first child</p></b
+        >
+        <div></div>
+      </div>
+      <div class="child">
+        <p>
+          p in first child
+          <i
+            >This p is inside p tag
+            <b>This b is inside p</b>
+          </i>
+        </p>
+        <i><p>This p is inside i tag of second child</p></i>
+        <b
+          >b in first child
+          <p>This p is inside b of first child</p></b
+        >
+        <div></div>
+      </div>
+
+      <p>this p is outside</p>
+      <b>this b is outside</b>
+      <div></div>
+      <div class="another-child">
+        <div class="child">
+          <div class="sub-child">sub-chid1</div>
+          <div class="sub-child">
+            sub-chid2
+            <div class="child">
+              <b>
+                <p>
+                  This p is inside of b tag of child of sub-child of child of
+                  another-child
+                </p>
+              </b>
+            </div>
+          </div>
+          <div class="sub-child">sub-chid3</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 50px;
+      }
+      .box {
+        margin-top: 20px;
+        height: 100px;
+        width: 100px;
+        border-radius: 5px;
+        background-color: yellowgreen;
+        margin-bottom: 50px;
+      }
+      .fancy {
+        background-color: whitesmoke;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: all 300ms;
+      }
+
+      .fancy:hover {
+        transform: translateY(-5px);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="has">hasClass</button>
+    <button id="add">addClass</button>
+    <button id="remove">removeClass</button>
+    <button id="toggle">toggleClass</button>
+    <div class="box"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      //   console.log($('.box').attr('class'));
+
+      $('#has').click(() => {
+        className = prompt('Enter class name: ');
+        alert($('.box').hasClass(className));
+      });
+      $('#add').click(() => {
+        className = prompt('Enter class name: ');
+        console.log($('.box').addClass(className));
+      });
+      $('#remove').click(() => {
+        className = prompt('Enter class name: ');
+        console.log($('.box').removeClass(className));
+      });
+      $('#toggle').click(() => {
+        className = prompt('Enter class name: ');
+        console.log($('.box').toggleClass(className));
+      });
+    </script>
+  </body>
+</html>

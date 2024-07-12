@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        child1
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+      <div class="child">
+        child2
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+      <div class="child">
+        child3
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+    </div>
+
+    <script>
+      parent = document.getElementsByClassName('parent')[0];
+
+      //   ----------
+      // children and  parent
+
+      //   console.log(parent);
+      //   console.log(parent.children);
+      //   console.log(parent.children[1]);
+      //   console.log(
+      //     parent.children[1].parentElement.parentElement.parentElement
+      //       .parentElement
+      //   );
+
+      //   ----------
+      // children
+
+      //   console.log(parent.children[0]);
+      //   console.log(parent.firstElementChild);
+      //   console.log(parent.lastElementChild);
+
+      //   ----------
+      // siblings
+
+      console.log(parent.children[1]);
+      console.log(parent.children[1].nextElementSibling);
+      console.log(parent.children[1].previousElementSibling);
+
+      //   ----------
+      // children length
+      console.log(parent.childElementCount);
+      console.log(parent.children.length);
+    </script>
+  </body>
+</html>

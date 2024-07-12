@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 70%;
+        height: 500px;
+        background-color: aqua;
+        font-size: 16px;
+      }
+      .child {
+        /* width: 300px; */
+        /* width: 50%; */
+        width: 100ch;
+        height: 300px;
+        background-color: brown;
+        font-size: 1.7em;
+      }
+
+      .sub-child {
+        font-size: 1.5em;
+      }
+      .sub-sub-child {
+        font-size: 3rem;
+      }
+
+      .test {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      parent
+      <div class="child">
+        child
+        <div class="sub-child">
+          sub-child
+          <div class="sub-sub-child">sub-sub-child</div>
+        </div>
+      </div>
+    </div>
+    <div class="test">aaa</div>
+  </body>
+</html>
+
+<!-- px, %, em, rem, vh, vw -->

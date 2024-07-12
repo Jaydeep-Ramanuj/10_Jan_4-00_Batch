@@ -1,0 +1,11 @@
+body {
+  height: 100vh;
+}
+
+.box {
+  height: 300px;
+  border-radius: 8px;
+  margin: 50px auto;
+  width: 300px;
+  background-color: yellowgreen;
+}/*# sourceMappingURL=directives.css.map */

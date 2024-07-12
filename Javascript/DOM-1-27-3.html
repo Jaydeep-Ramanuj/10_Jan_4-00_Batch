@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>Simple div</div>
+    <div class="some">div with some class</div>
+    <div id="some-id">div with some-id id</div>
+    <div id="some-id" class="some">div with some-id id and some class</div>
+    <div id="some-id" class="some">
+      div with some-id id and some class second
+    </div>
+    <p>Am I extra ?</p>
+    <script>
+      //   console.log(document);
+      //   console.dir(document);
+
+      //   getElementById
+      let someWithId = document.getElementById('some-id');
+      console.log(someWithId);
+
+      // getElementsByClassName
+      let someWithClass = document.getElementsByClassName('some');
+      console.log(someWithClass);
+      console.log(someWithClass[1]);
+
+      //   getElementsByTagName
+      let someWithTagName = document.getElementsByTagName('div');
+      console.log(someWithTagName);
+      console.log(someWithTagName[3]);
+
+      //querySelector
+      let someWithIdAndClass = document.querySelector('div#some-id.some');
+      //   console.log(someWithIdAndClass);
+
+      //   querySelectorAll
+      let someWithIdAndClassAll = document.querySelectorAll('div#some-id.some');
+      console.log(someWithIdAndClassAll);
+    </script>
+  </body>
+</html>

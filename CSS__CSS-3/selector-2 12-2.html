@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            transition: all 600ms;
+        }
+
+        .parent:hover{
+            background-color: chocolate;
+        }
+
+/* input:focus{
+    background-color: grey;
+}
+input:read-only{
+background-color: chartreuse;
+} */
+
+.child{
+    width: 300px;
+    height: 300px;
+    background-color: chocolate;
+}
+
+.parent:focus-within{
+    border: 3px solid red;
+}
+
+li{
+    list-style: none;
+}
+li::before{
+    content: '\21A3';
+    /* display: block;
+    height: 5px;
+    width: 20px;
+    background-color: red; */
+}
+
+li:hover{
+    color: red;
+}
+
+li:hover + li::before{
+transform: translateX(-10px);
+}
+
+input::placeholder{
+    color: red;
+}
+
+
+    </style>
+  <body>
+    <div class="parent">
+      <input type="text" name="" id="" >
+    </div>
+    <input type="text" name="" id=""  placeholder="Enter your name" >
+
+    <ul>
+        <li data-name="Jay">This</li>
+        <li data-name="Jay">That</li>
+    </ul>
+
+
+    <div class="parent">
+        <div class="child child1"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+  </body>
+</html>

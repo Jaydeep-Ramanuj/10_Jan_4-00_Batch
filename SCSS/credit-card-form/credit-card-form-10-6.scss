@@ -1,0 +1,64 @@
+$color1: #b5ddca;
+$color2: #ded196;
+
+$input-color: rgba(128, 128, 128, 0.647);
+
+@mixin form-input() {
+  input {
+    outline: none;
+    padding: 8px;
+    border: 2px solid $input-color;
+    border-radius: 8px;
+  }
+}
+
+@mixin form-label() {
+  margin: 10px 0;
+  position: relative;
+  label {
+    position: absolute;
+    font-size: 14px;
+    text-transform: uppercase;
+    top: -20px;
+    left: 5px;
+    color: grey;
+  }
+}
+
+@mixin custom-flex(
+  $direction: row,
+  $justify: start,
+  $align: start,
+  $gap: 0px,
+  $wrap: nowrap
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+  flex-wrap: $wrap;
+}
+
+.credit-card-form {
+  padding: 20px;
+  background-color: #ffffff;
+
+  form {
+    @include custom-flex($direction: column, $gap: 10px);
+    @include form-input();
+
+    .card-number,
+    .card-holder,
+    .date-cvv .expiry-date,
+    .date-cvv .cvv {
+      @include form-label();
+    }
+    .date-cvv .expiry-date input {
+      min-width: 150px;
+    }
+    .date-cvv {
+      @include custom-flex();
+    }
+  }
+}

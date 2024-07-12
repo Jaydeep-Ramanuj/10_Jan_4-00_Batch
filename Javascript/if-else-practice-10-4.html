@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      age = 5;
+      status = 'woman';
+      ticketPRice = 100;
+
+      // if else ladder
+      //   if (age <= 3) {
+      //     console.log('Free ticket, 0 Rs.');
+      //   } else if (age <= 8) {
+      //     console.log(`Half ticket, ${ticketPRice / 2} Rs.`);
+      //   } else if (age > 8 && status == 'MLA') {
+      //     console.log(`MLA ticket, ${ticketPRice - 10} Rs.`);
+      //   } else if (age > 8 && status == 'divyang') {
+      //     console.log(`Divyang ticket, ${ticketPRice - 25} Rs.`);
+      //   } else if (age > 8 && status == 'woman') {
+      //     console.log(`Woman ticket, ${ticketPRice - 15} Rs.`);
+      //   } else {
+      //     console.log(`Full ticket, ${ticketPRice} Rs.`);
+      //   }
+
+      //   nested if-else
+      if (age <= 8) {
+        if (age < 3) {
+          console.log('Free ticket, 0 Rs.');
+        } else {
+          console.log(`Half ticket, ${ticketPRice / 2} Rs.`);
+        }
+      } else {
+        if (status == 'MLA') {
+          console.log(`MLA ticket, ${ticketPRice - 10} Rs.`);
+        } else if (status == 'divyang') {
+          console.log(`Divyang ticket, ${ticketPRice - 25} Rs.`);
+        } else if ((status = 'woamn')) {
+          console.log(`Woman ticket, ${ticketPRice - 15} Rs.`);
+        }
+      }
+    </script>
+  </body>
+</html>

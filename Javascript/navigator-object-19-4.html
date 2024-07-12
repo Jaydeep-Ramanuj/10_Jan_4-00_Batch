@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Click to copy</button>
+    <button id="location">get Location</button>
+    <button id="stop-spying">Stop Spying</button>
+    <script>
+      console.log(window);
+
+      //   access user clipboard
+
+      //   window.navigator.clipboard.readText().then((response) => {
+      //     console.log(response);
+      //   });
+
+      //   document
+      //     .getElementsByTagName('button')[0]
+      //     .addEventListener('click', () => {
+      //       window.navigator.clipboard
+      //         .writeText('Hey Im in your clipboard')
+      //         .then((response) => {
+      //           console.log(response);
+      //         });
+      //     });
+      // access location
+
+      //   document.getElementById('location').addEventListener('click', () => {
+      //     window.navigator.geolocation.getCurrentPosition((position) => {
+      //       console.log(position);
+      //     });
+      //   });
+
+      let userDynamicLocation = [];
+
+      let getLocation = setInterval(() => {
+        window.navigator.geolocation.getCurrentPosition((position) => {
+          //   console.log(position);
+          userDynamicLocation.push({
+            lat: position.coords.latitude,
+            long: position.coords.longitude,
+            time: position.timestamp,
+          });
+        });
+      }, 500);
+
+      document.getElementById('stop-spying').addEventListener('click', () => {
+        clearInterval(getLocation);
+        console.log(userDynamicLocation);
+      });
+    </script>
+  </body>
+</html>

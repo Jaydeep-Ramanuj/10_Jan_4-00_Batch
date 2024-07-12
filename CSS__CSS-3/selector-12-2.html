@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .temp {
+        color: red;
+      }
+      .temp ~ .sub-child {
+        color: blue;
+      }
+      .temp + .sub-child {
+        color: blue;
+      }
+
+      .temp2 ~ .sub-child {
+        color: green;
+      }
+
+      .temp2 ~ .sub-child .sub-sub-child {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        child
+        <div class="sub-child temp">sub-child1</div>
+        <p>This is imposter</p>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+
+      <div class="child temp3">
+        <div class="sub-child">
+          sub-child1
+          <div class="sub-sub-child">sub-sub-child1</div>
+          <div class="sub-sub-child">sub-sub-child2</div>
+        </div>
+        <div class="sub-child">
+          sub-child2
+          <div class="sub-sub-child">sub-sub-child1</div>
+          <div class="sub-sub-child">sub-sub-child2</div>
+        </div>
+        <div class="sub-child">
+          sub-child3
+          <div class="sub-sub-child">sub-sub-child1</div>
+          <div class="sub-sub-child">sub-sub-child2</div>
+        </div>
+      </div>
+      <div class="child">
+        <div class="sub-child">
+          sub-child1
+          <div class="sub-sub-child">sub-sub-child1</div>
+          <div class="sub-sub-child">sub-sub-child2</div>
+        </div>
+        <div class="sub-child temp2">
+          sub-child2
+          <div class="sub-sub-child">sub-sub-child1</div>
+          <div class="sub-sub-child">sub-sub-child2</div>
+        </div>
+        <div class="sub-child">
+          sub-child3
+          <div class="sub-sub-child">sub-sub-child1</div>
+          <div class="sub-sub-child">sub-sub-child2</div>
+        </div>
+      </div>
+      <div class="child">
+        <div class="sub-child">
+          sub-child1
+          <div class="sub-sub-child">sub-sub-child1</div>
+          <div class="sub-sub-child">sub-sub-child2</div>
+        </div>
+        <div class="sub-child">
+          sub-child2
+          <div class="sub-sub-child">sub-sub-child1</div>
+          <div class="sub-sub-child">sub-sub-child2</div>
+        </div>
+        <div class="sub-child">
+          sub-child3
+          <div class="sub-sub-child">sub-sub-child1</div>
+          <div class="sub-sub-child">sub-sub-child2</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- + adjacent sibling selector -->
+<!-- ~ general sibling selector -->
+
+<!-- > child selector -->
+<!--  descendent selector -->

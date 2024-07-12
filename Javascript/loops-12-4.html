@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   basic loops
+
+      // 1. for loop
+      // 2. while loop
+      // 2. do...while loop
+
+      // ------
+      // for loop
+      // ------
+
+      //   syntax
+      //   for (initialization; condition; increment / decrement) {
+      //     // code you want to repeat
+      //   }
+
+      //   printing 1 to 10 using for loop
+      //   for (let counter = 1; counter <= 10; counter++) {
+      //     console.log(counter);
+      //   }
+
+      //   Finding sum of 1 to 100000
+      //   let result = 0;
+
+      //   for (let counter = 1; counter <= 100000; counter++) {
+      //     result = result + counter;
+      //   }
+      //   console.log(result);
+
+      // ------
+      // while loop
+      // ------
+
+      //   syntax
+      //   initialization;
+
+      //   while (condition) {
+      //     // code you want to repeat
+      //     //   increment/decrement
+      //   }
+
+      //   Finding sum of 1 to 100000
+      //   let counter = 0;
+      //   let result = 0;
+      //   while (counter <= 100) {
+      //     // result = result + counter;
+      //     result += counter;
+      //     counter += 10;
+      //   }
+      //   console.log(result);
+
+      // ------
+      // do...while loop
+      // ------
+
+      //   syntax
+      //   initialization;
+
+      // do{
+      //   code you want to repeat
+      //   increment/decrement
+      // }while (condition)
+
+      //   Finding sum of 1 to 100000
+      //   let counter = 0;
+      //   let result = 0;
+      //   do {
+      //     result += counter;
+      //     counter += 10;
+      //   } while (counter <= 100);
+      //   console.log(result);
+
+      numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+      //   numbers.forEach((number) => {
+      //     console.log(number);
+      //   });
+
+      //   for (number of numbers) {
+      //     console.log(number);
+      //   }
+
+      obj = {
+        1: '11',
+        2: '22',
+        3: '33',
+        4: '44',
+        5: '55',
+        6: '66',
+        7: '77',
+        8: '88',
+        9: '99',
+        10: '1010',
+      };
+
+      for (item in obj) {
+        // console.log(item);
+        console.log(obj[item]);
+      }
+    </script>
+  </body>
+</html>

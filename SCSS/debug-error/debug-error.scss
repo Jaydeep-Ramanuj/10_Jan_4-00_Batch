@@ -1,0 +1,15 @@
+$width: 500px;
+$height: 200px;
+
+$newWidth: ($width + 639px)-300px;
+
+@debug $newWidth;
+@debug mix(blue, rgba(149, 255, 0, 0.614));
+
+@mixin demo($var) {
+  @error $var;
+}
+
+.temp {
+  @include demo(300);
+}

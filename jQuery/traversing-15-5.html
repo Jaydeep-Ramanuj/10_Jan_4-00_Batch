@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">Child1</div>
+      <div class="child">Child2</div>
+      <div class="child">Child3</div>
+      <div class="child" id="some">Child4</div>
+      <b class="child">Child5</b>
+      <div class="child">Child6</div>
+      <p class="child">Child7</p>
+      <div class="child">Child8</div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      // Accessing first element from list
+      console.log($('.child').first().css('background-color', 'grey'));
+      // Accessing last element from list
+      console.log($('.child').last().css('background-color', 'grey'));
+      // Accessing element at specified index from list
+      console.log($('.child').eq(3).css('background-color', 'grey'));
+      // Accessing element  which satisfies specified selector element from list
+      console.log($('.child').filter('#some').css('background-color', 'red'));
+
+      console.log($('.child').filter('p').css('background-color', 'red'));
+
+      // Accessing all elements which doesn't satisfies specified selector element from list
+      console.log($('.child').not('b').css('background-color', 'green'));
+    </script>
+  </body>
+</html>

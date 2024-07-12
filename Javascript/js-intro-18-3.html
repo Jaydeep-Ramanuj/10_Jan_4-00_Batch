@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- internal -->
+    <script defer>
+      console.log('Printing from internal js file');
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- inline -->
+    <button onclick="console.log('Printing from html tag')">Button</button>
+    <script src="js-intro-18-3.js"></script>
+    <script>
+      // document.write('Namste');
+      console.log('Namste Javascript');
+      console.log('This line will run only when no error is present');
+    </script>
+  </body>
+</html>

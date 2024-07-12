@@ -1,0 +1,33 @@
+// Operators
+
+@width: 700px;
+@height: (@width / 2px);
+
+// Map
+
+.borderType() {
+  solid: 3px solid black;
+  dashed: 3px dashed red;
+  dotted: 3px dotted green;
+
+  display: block;
+}
+
+// List
+
+@colors: red, blue, green;
+
+.box {
+  width: @width;
+  height: @height;
+  border-radius: 12px;
+  margin: 100px auto;
+  background-color: tomato;
+
+  // Access Map value
+
+  border: .borderType[solid];
+
+  display: .borderType[display];
+  color: extract(@colors, 2);
+}
