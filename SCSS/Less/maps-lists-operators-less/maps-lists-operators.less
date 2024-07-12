@@ -15,7 +15,7 @@
 
 // List
 
-@colors: red, blue, green;
+@colors: red, blue, green, purple;
 
 .box {
   width: @width;
@@ -29,5 +29,11 @@
   border: .borderType[solid];
 
   display: .borderType[display];
-  color: extract(@colors, 2);
+
+  color: extract(@colors, 3);
+
+  border-left-color: extract(@colors, 1);
+  border-top-color: extract(@colors, 2);
+  border-right-color: extract(@colors, 3);
+  border-bottom-color: extract(@colors, 4);
 }

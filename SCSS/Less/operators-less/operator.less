@@ -1,0 +1,28 @@
+@width: 500px;
+
+@half-width:@width / 2;
+@double-width:@width * 2;
+@3-times-width:@width * 3;
+
+@border-radius: 8px;
+@border-width: 3px;
+
+@size: 400px; // small, medium , large
+
+.box {
+  width: @width;
+  height: 300px;
+  margin: 50px auto;
+  border-radius: @border-radius * 2;
+
+  background-color: if(@size < 300px, red, blue); // >
+
+  border: @border-width+3 solid red;
+  .inner-box {
+    width: @half-width;
+    height: 100px;
+    border-radius: @border-radius;
+    background-color: teal;
+    border: @border-width solid black;
+  }
+}
