@@ -1,0 +1,32 @@
+.box {
+  height: 400px;
+  width: 300px;
+  background-color: tomato;
+  border-color: red blue purple green;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-style: solid dashed dotted double;
+  position: relative;
+}
+.box:before {
+  content: "";
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: tomato transparent transparent;
+  border-width: 1rem 1rem 0;
+  border-style: dotted;
+  position: absolute;
+  bottom: -15px;
+  left: calc(50% - 15px);
+}
+
+[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], input:not([type]), textarea {
+  background-color: rgba(255, 99, 71, 0.385);
+}
+
+[type=color]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus, [type=url]:focus, [type=week]:focus, input:not([type]):focus, textarea:focus {
+  outline: 3px solid red;
+}
+
+/*# sourceMappingURL=bourbon.css.map */

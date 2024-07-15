@@ -1,0 +1,28 @@
+@import 'bourbon/core/bourbon';
+
+.box {
+  @include size(300px, 400px);
+  background-color: tomato;
+
+  @include border-color(red blue purple green);
+  @include border-top-radius(12px);
+  @include border-style(solid dashed dotted double);
+  position: relative;
+
+  &:before {
+    content: '';
+    @include triangle('down', 2rem, 1rem, tomato);
+    border-style: dotted;
+    position: absolute;
+    bottom: -15px;
+    // left: 50%;
+    left: calc(50% - 15px);
+  }
+}
+
+#{$all-text-inputs} {
+  background-color: rgba(255, 99, 71, 0.385);
+}
+#{$all-text-inputs-focus} {
+  outline: 3px solid red;
+}

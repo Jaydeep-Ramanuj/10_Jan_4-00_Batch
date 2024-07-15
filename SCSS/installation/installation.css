@@ -1,0 +1,14 @@
+.box {
+  height: 300px;
+  width: 600px;
+  background-color: tomato;
+  margin: 100px auto;
+  border-radius: 12px;
+  transition: all 300ms;
+}
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/*# sourceMappingURL=installation.css.map */
