@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      .spacer {
+        height: 500px;
+      }
+      .box {
+        height: 300px;
+        width: 300px;
+        margin: 150px auto;
+        background-color: tomato;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- To do this visit this site, 
+    https://michalsnik.github.io/aos/ -->
+
+    <div class="spacer"></div>
+    <div
+      class="box"
+      data-aos="fade-right"
+      data-aos-duration="3000"
+      data-aos-anchor-placement="center-bottom"
+    ></div>
+    <div class="box" data-aos="fade-left" data-aos-duration="2000"></div>
+    <div class="box" data-aos="fade-up-right"></div>
+    <div class="box" data-aos="flip-left"></div>
+    <div class="box" data-aos="zoom-in"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
