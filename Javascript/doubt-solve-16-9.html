@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        margin: 50px auto;
+        width: fit-content;
+        padding: 20px;
+        border: 2px solid grey;
+
+        background-color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="addElement()">Add btn</button>
+
+    <div class="container"></div>
+
+    <script>
+      const btn = document.getElementsByTagName('button')[0];
+      const container = document.getElementsByClassName('container')[0];
+
+      //   btn.addEventListener('click', () => {
+      //     let newBoxEle = document.createElement('div');
+      //     let newBoxContent = document.createElement('b');
+      //     newBoxEle.classList.add('box');
+      //     newBoxContent.innerText = 'This is bold text';
+      //     newBoxEle.append(newBoxContent);
+      //     newBoxEle.style.cssText = `padding:20px;
+      //         background-color: tomato;
+      //         border-radius: 12px;
+      //         margin: 50px auto;`;
+
+      //     container.append(newBoxEle);
+      //   });
+
+      function addElement() {
+        let newBoxEle = document.createElement('div');
+        let newBoxContent = document.createElement('b');
+        newBoxEle.classList.add('box');
+        newBoxContent.innerText = 'This is bold text';
+        newBoxEle.append(newBoxContent);
+        newBoxEle.style.cssText = `padding:20px;
+            background-color: tomato;
+            border-radius: 12px;
+            margin: 50px auto;`;
+
+        container.append(newBoxEle);
+      }
+    </script>
+  </body>
+</html>

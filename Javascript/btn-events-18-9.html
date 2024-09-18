@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        padding: 30px;
+        width: fit-content;
+        margin: 50px auto;
+        border-radius: 12px;
+        background-color: wheat;
+        display: flex;
+        gap: 50px;
+        cursor: pointer;
+      }
+
+      .color {
+        height: 50px;
+        width: 50px;
+        border-radius: 6px;
+      }
+      .color:nth-child(1) {
+        background-color: tomato;
+      }
+      .color:nth-child(2) {
+        background-color: green;
+      }
+      .color:nth-child(3) {
+        background-color: teal;
+      }
+      .color:nth-child(4) {
+        background-color: orange;
+      }
+      .color:nth-child(5) {
+        background-color: violet;
+      }
+      .color:nth-child(2) {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Click</button>
+
+    <div class="container">
+      <div class="color" onclick="changeBgColorUsingBtns(this)"></div>
+      <div class="color" onclick="changeBgColorUsingBtns(this)"></div>
+      <div class="color" onclick="changeBgColorUsingBtns(this)"></div>
+      <div class="color" onclick="changeBgColorUsingBtns(this)"></div>
+      <div class="color" onclick="changeBgColorUsingBtns(this)"></div>
+    </div>
+
+    <script>
+      let btn = document.getElementsByTagName('button')[0];
+
+      btn.addEventListener('focus', () => {
+        btn.style.backgroundColor = 'tomato';
+        btn.style.color = 'white';
+
+        document.body.style.backgroundColor = '#24252e';
+      });
+
+      function changeBgColor() {
+        document.body.style.backgroundColor = '#24252e';
+      }
+
+      document.body.addEventListener('keydown', (e) => {
+        console.log(e.key);
+        if (e.shiftKey && e.ctrlKey && e.key == 'Z') {
+          changeBgColor();
+        }
+      });
+
+      function changeBgColorUsingBtns(element) {
+        style = getComputedStyle(element);
+        document.body.style.backgroundColor = style.backgroundColor;
+      }
+
+      btn.onmouseover = () => console.log('Btn hovered');
+    </script>
+  </body>
+</html>
